@@ -10,13 +10,45 @@ import (
 )
 
 type DescribeResourceBillsResp struct {
-	Code     int64  `json:"code"`
+	Code     int    `json:"code"`
 	CodeDesc string `json:"codeDesc"`
 	Data     struct {
-		Amount          int64         `json:"amount"`
-		Data            []interface{} `json:"data"`
-		ProductCodeList []interface{} `json:"productCodeList"`
-		Total           int64         `json:"total"`
+		Amount int `json:"amount"`
+		Data   []struct {
+			ActionType     string        `json:"actionType"`
+			Amount         string        `json:"amount"`
+			AppID          string        `json:"appId"`
+			CalcUnit       string        `json:"calcUnit"`
+			Count          string        `json:"count"`
+			EndTime        string        `json:"endTime"`
+			ID             string        `json:"id"`
+			InstanceID     string        `json:"instanceId"`
+			InstanceIDType string        `json:"instanceIdType"`
+			ModifyType     string        `json:"modifyType"`
+			Month          string        `json:"month"`
+			OwnerUin       string        `json:"ownerUin"`
+			PayMode        string        `json:"payMode"`
+			PayType        string        `json:"payType"`
+			PayerMode      string        `json:"payerMode"`
+			PayerUin       string        `json:"payerUin"`
+			Platform       string        `json:"platform"`
+			Price          string        `json:"price"`
+			ProductCode    string        `json:"productCode"`
+			ProjectID      string        `json:"projectId"`
+			Projects       []interface{} `json:"projects"`
+			Reduces        []interface{} `json:"reduces"`
+			Region         string        `json:"region"`
+			ReturnAmount   string        `json:"returnAmount"`
+			StartTime      string        `json:"startTime"`
+			SubProductCode string        `json:"subProductCode"`
+			TimeSpan       string        `json:"timeSpan"`
+			TimeUnit       string        `json:"timeUnit"`
+			UnitPrice      string        `json:"unitPrice"`
+			UsedTimeSpan   string        `json:"usedTimeSpan"`
+			ZoneNumber     string        `json:"zoneNumber"`
+		} `json:"data"`
+		ProductCodeList []string `json:"productCodeList"`
+		Total           int      `json:"total"`
 	} `json:"data"`
 	Message string `json:"message"`
 }
