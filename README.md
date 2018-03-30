@@ -14,6 +14,17 @@ secretkey = e7OVRFuOiy2E
 
 Usage:
 
+Clone repository:
+```
+mkdir -p $GOPATH/src/github.com/tencentcloudplatform
+cd $GOPATH/src/github.com/tencentcloudplatform
+git clone https://github.com/tencentcloudplatform/tcpicli.git
+cd tcpicli/tcpicli
+go get -u github.com/go-ini/ini
+go get -u github.com/urfave/cli
+go build -o
+```
+
 `tcpicli -vv profile switch chinatest`
 
 Then issue your API call against the account that's named in the [brakets].
