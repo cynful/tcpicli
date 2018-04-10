@@ -1,8 +1,10 @@
 # tcpicli
 Tencent Cloud Platform International Command Line Interface
 
-## Usage:
+## Requirements:
+[Go](https://golang.org/doc/install)
 
+## Usage:
 Clone repository:
 ```
 mkdir -p $GOPATH/src/github.com/tencentcloudplatform
