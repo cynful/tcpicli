@@ -2,7 +2,7 @@
 Tencent Cloud Platform International Command Line Interface
 
 ## Requirements:
-[Go](https://golang.org/doc/install)
+[Go](https://golang.org/doc/install) Programming Language
 
 ## Usage:
 Clone repository:
