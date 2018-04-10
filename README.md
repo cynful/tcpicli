@@ -14,6 +14,10 @@ go get -u github.com/urfave/cli
 go build
 go install
 ```
+Consider symbolic linking the installed executeable:
+```
+ln -s $HOME/go/bin/tcpicli /usr/local/bin/tcpicli
+```
 
 ## profile
 Select profile to use API keys. Place configuration in ~/.tcpicli/config
