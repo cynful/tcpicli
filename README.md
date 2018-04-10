@@ -1,18 +1,7 @@
 # tcpicli
 Tencent Cloud Platform International Command Line Interface
 
-## profile
-Select profile to use API keys. Place configuration in ~/.tcpicli/config
-
-Example:
-
-```
-[chinatest]
-secretid  = ZBcr8RCC0d5LPJ6j9NTo4aF
-secretkey = e7OVRFuOiy2E
-```
-
-Usage:
+## Usage:
 
 Clone repository:
 ```
@@ -22,7 +11,19 @@ git clone https://github.com/tencentcloudplatform/tcpicli.git
 cd tcpicli/tcpicli
 go get -u github.com/go-ini/ini
 go get -u github.com/urfave/cli
-go build -o
+go build
+go install
+```
+
+## profile
+Select profile to use API keys. Place configuration in ~/.tcpicli/config
+
+Example:
+
+```
+[chinatest]
+secretid  = ZBcr8RCC0d5LPJ6j9NTo4aF
+secretkey = e7OVRFuOiy2E
 ```
 
 `tcpicli -vv profile switch chinatest`
