@@ -6,6 +6,10 @@ Tencent Cloud Platform International Command Line Interface
 
 Make sure to setup $GOPATH
 
+```
+$ export GOPATH=$HOME/go
+```
+
 ## Usage:
 Clone repository:
 ```
@@ -38,7 +42,7 @@ secretkey = e7OVRFuOiy2E
 
 Then issue your API call against the account that's named in the [brackets].
 
-Help: 
+Help:
 
 `tcpicli`:
 
@@ -83,14 +87,14 @@ GLOBAL OPTIONS:
 
 NOTES:
 
-Some APIs under development. If you receive an error like: 
+Some APIs under development. If you receive an error like:
 
 ```
 tcpicli lb DescribeLoadBalancers Region=bj
 json: cannot unmarshal string into Go struct field .internetMaxBandwidthOut of type float64
 ```
 
-use the 'do' command as a temporary workaround: 
+use the 'do' command as a temporary workaround:
 
 ```
 tcpicli do lb DescribeLoadBalancers Region=bj
