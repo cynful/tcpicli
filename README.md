@@ -3,22 +3,23 @@ Tencent Cloud Platform International Command Line Interface
 
 ## Requirements:
 [Go](https://golang.org/doc/install) Programming Language
+Make sure to setup $GOPATH
 
 ## Usage:
 Clone repository:
 ```
-mkdir -p $GOPATH/src/github.com/tencentcloudplatform
-cd $GOPATH/src/github.com/tencentcloudplatform
-git clone https://github.com/tencentcloudplatform/tcpicli.git
-cd tcpicli/tcpicli
-go get -u github.com/go-ini/ini
-go get -u github.com/urfave/cli
-go build
-go install
+$ mkdir -p $GOPATH/src/github.com/tencentcloudplatform
+$ cd $GOPATH/src/github.com/tencentcloudplatform
+$ git clone https://github.com/tencentcloudplatform/tcpicli.git
+$ cd tcpicli/tcpicli
+$ go get -u github.com/go-ini/ini
+$ go get -u github.com/urfave/cli
+$ go build
+$ go install
 ```
 Consider symbolic linking the installed executeable:
 ```
-ln -s $HOME/go/bin/tcpicli /usr/local/bin/tcpicli
+$ ln -s $HOME/go/bin/tcpicli /usr/local/bin/tcpicli
 ```
 
 ## profile
@@ -34,7 +35,7 @@ secretkey = e7OVRFuOiy2E
 
 `tcpicli -vv profile switch chinatest`
 
-Then issue your API call against the account that's named in the [brakets].
+Then issue your API call against the account that's named in the [brackets].
 
 Help: 
 
@@ -42,7 +43,7 @@ Help:
 
 ```
 NAME:
-   tcpicli - tencent cloud platform cli tool
+   tcpicli - tencent cloud platform command-line interface tool
 
 USAGE:
    tcpicli [global options] command [command options] [arguments...]
